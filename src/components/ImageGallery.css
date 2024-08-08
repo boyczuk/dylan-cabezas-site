@@ -1,0 +1,35 @@
+.image-gallery {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    height: 600px; /* Adjust based on your preferred height */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.image-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.image-gallery img {
+    width: auto;  /* Keeps image width proportional to its original size */
+    max-height: 100%;  /* Limits image height to gallery height */
+    object-fit: contain;  /* Ensures images are scaled correctly */
+    margin-right: 10px;  /* Space between images */
+}
+
+/* Navigation Buttons */
+.button-left, .button-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent black */
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+}
