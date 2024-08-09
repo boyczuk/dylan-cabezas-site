@@ -1,0 +1,27 @@
+.content-page {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.content-page h2, .content-page h4, .content-page h6 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.content-page .MuiCard-root {
+    background: transparent;
+    box-shadow: none;
+}
+
+.content-page .MuiCardMedia-root {
+    border-radius: 0;
+}
+
+.content-page .MuiCardContent-root {
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+.content-page iframe {
+    border-radius: 0;
+}

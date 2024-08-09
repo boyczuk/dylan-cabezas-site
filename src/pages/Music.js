@@ -3,6 +3,7 @@ import './Music.css';
 import { Box, Typography, Grid, Card, CardMedia, CardContent } from '@mui/material';
 import modelling1 from '../assets/modellingtemp1.png';
 import modelling2 from '../assets/modellingtemp2.png';
+import musictemp from '../assets/musictemp.png';
 
 const Music = () => {
     return (
@@ -34,7 +35,7 @@ const Music = () => {
                             component="img"
                             alt="Dylan Cabezas"
                             height="300"
-                            image={modelling2}
+                            image={musictemp}
                             title="Dylan Cabezas"
                         />
                         <CardContent>

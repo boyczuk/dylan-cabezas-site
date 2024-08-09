@@ -16,17 +16,28 @@ const Home = () => {
         { src: modelling4, alt: 'Description of image 4' },
     ];
 
+    const agencies = [
+        { name: "WANT Management", link: "https://www.wantmanagement.com/models/men/597-dylan/", flag: "https://flagcdn.com/w20/ca.png", location: "Toronto, Canada" },
+        { name: "Crawford Models", link: "https://www.crawfordmodels.com/model/dylan-cabezas/", flag: "https://flagcdn.com/w20/us.png", location: "New York, USA" },
+        { name: "I Love Models Management", link: "https://www.ilovemodelsmanagement.com/model/1155/dylan-cabezas", flag: "https://flagcdn.com/w20/it.png", location: "Milan, Italy" }
+    ];
+
     return (
         <>
             <div className="page">
                 <ImageGallery images={images} />
 
-                {/*<div className='agency-list'>
+                <div className='agency-list'>
                     <h1>Agencies</h1>
-                    <li>WANT Management</li>
-                    <li>Crawford Models</li>
-                    <li>I Love models Management</li>
-                </div>*/}
+                    {agencies.map((agency, index) => (
+                        <div key={index} className="agency-item">
+
+                            <a href={agency.link} className="agency-link" target="_blank" rel="noopener noreferrer">{agency.name}</a>
+                             {agency.location}
+                            <img src={agency.flag} alt={agency.location} style={{ marginLeft: '10px' }} />
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     )
