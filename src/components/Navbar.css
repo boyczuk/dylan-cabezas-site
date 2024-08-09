@@ -19,5 +19,9 @@
 }
 
 .css-4c8arj-MuiTypography-root {
-    margin-left: -3% !important;
+    margin-left: -6% !important;
+}
+
+.css-75r34a-MuiPaper-root-MuiAppBar-root {
+    margin-top: 1%;
 }
