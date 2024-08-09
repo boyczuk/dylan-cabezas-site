@@ -20,6 +20,13 @@ const Home = () => {
         <>
             <div className="page">
                 <ImageGallery images={images} />
+
+                {/*<div className='agency-list'>
+                    <h1>Agencies</h1>
+                    <li>WANT Management</li>
+                    <li>Crawford Models</li>
+                    <li>I Love models Management</li>
+                </div>*/}
             </div>
         </>
     )

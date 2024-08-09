@@ -1,0 +1,27 @@
+.music-page {
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.music-page h2, .music-page h4, .music-page h6 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.music-page .MuiCard-root {
+    background: transparent;
+    box-shadow: none;
+}
+
+.music-page .MuiCardMedia-root {
+    border-radius: 0;
+}
+
+.music-page .MuiCardContent-root {
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+.music-page iframe {
+    border-radius: 0;
+}
