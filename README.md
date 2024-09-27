@@ -4,3 +4,4 @@ TODO:
 3. Mobile responsiveness
 4. Add real info
 5. fix agency links on first page
+6. Images load slowly

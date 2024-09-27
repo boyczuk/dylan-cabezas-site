@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Music from './pages/Music';
 import Info from './pages/Info';
 import Navbar from './components/Navbar';
+import Photography from './pages/Photography';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="*" element={<Home />} />
           <Route path="/music" element={<Music />} />
           <Route path="/info" element={<Info />} />
+          <Route path="/photography" element={<Photography />} />
         </Routes>
       </div>
     </Router>
