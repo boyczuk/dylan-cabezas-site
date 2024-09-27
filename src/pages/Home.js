@@ -26,7 +26,7 @@ const Home = () => {
         <>
             <div className="page">
                 <ImageGallery images={images} />
-
+                {/*
                 <div className='agency-list'>
                     <h1>Agencies</h1>
                     {agencies.map((agency, index) => (
@@ -37,10 +37,10 @@ const Home = () => {
                             <img src={agency.flag} alt={agency.location} style={{ marginLeft: '10px' }} />
                         </div>
                     ))}
-                </div>
+                </div>*/}
             </div>
-        </>
-    )
+            </>
+            )
 }
 
-export default Home;
+            export default Home;

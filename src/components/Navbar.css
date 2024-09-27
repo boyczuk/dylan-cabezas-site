@@ -18,6 +18,13 @@
     text-align: center;
 }
 
+/* Media Query to hide the title on mobile */
+@media (max-width: 768px) {
+    .title {
+        display: none; /* Hide the title when screen width is less than 768px */
+    }
+}
+
 .css-4c8arj-MuiTypography-root {
     margin-left: -6% !important;
 }

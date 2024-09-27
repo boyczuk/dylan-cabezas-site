@@ -23,9 +23,6 @@ const Music = () => {
                             title="Dylan Cabezas"
                         />
                         <CardContent>
-                            <Typography variant="h6" align="center">
-                                Dylan Cabezas Performing
-                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -39,9 +36,6 @@ const Music = () => {
                             title="Dylan Cabezas"
                         />
                         <CardContent>
-                            <Typography variant="h6" align="center">
-                                Album Cover
-                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -55,9 +49,6 @@ const Music = () => {
                             title="Dylan Cabezas"
                         />
                         <CardContent>
-                            <Typography variant="h6" align="center">
-                                Album Cover
-                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>

@@ -12,7 +12,7 @@
     font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #444;
 }
 
@@ -25,54 +25,72 @@
     color: #555;
 }
 
+.photo-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
 }
 
-.photo-card {
+.portrait-grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.photo-card, .portrait-card {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: #fff;
-    transition: transform 0.3s, box-shadow 0.3s;
-    padding: 10px;
-    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
 }
 
-.photo-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.portrait-card {
+    height: 500px;
+    width: 100%;
 }
 
 .photo-image {
     width: 100%;
     height: auto;
     display: block;
-    border: 2px solid #fff;
-    filter: grayscale(10%) contrast(1.2) brightness(0.9);
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    border: none; 
+    box-shadow: none; 
 }
 
-.photo-caption {
-    padding: 1rem;
-    text-align: center;
-    font-weight: 400;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 0.9rem;
-    font-family: 'Courier New', Courier, monospace;
+.portrait-image {
+    max-width: 100%; 
+    max-height: 100%;
+    width: auto; 
+    height: auto;
+    transform: rotate(90deg);
+    object-fit: contain; 
+    display: block;
+    border: none;
+    box-shadow: none;
 }
 
-.photo-card:hover .photo-caption {
-    opacity: 1;
+@media (max-width: 768px) {
+    .photo-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .portrait-grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .portrait-card {
+        height: 500px;
+        max-height: 500px;
+    }
 }

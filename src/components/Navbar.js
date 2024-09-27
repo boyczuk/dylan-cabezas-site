@@ -29,11 +29,10 @@ const Navbar = () => {
                 <Box sx={{ display: 'flex' }}>
                     <Button component={RouterLink} to="/" color="inherit">Modelling</Button>
                     <Button component={RouterLink} to="/music" color="inherit">Music</Button>
-                    <Button component={RouterLink} to="/info" color="inherit">More</Button>
                     <Button component={RouterLink} to="/photography" color="inherit">35mm</Button>
                 </Box>
-                <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 0, fontWeight: 'bold', textAlign: 'center', flexBasis: '100%' }}>
-                    Dylan Cabezas
+                <Typography variant="h6" color="inherit" noWrap className="title" sx={{ flexGrow: 0, fontWeight: 'bold', textAlign: 'center', flexBasis: '100%' }}>
+                    Dylan 
                 </Typography>
                 <Box sx={{ display: 'flex' }}>
                     <IconButton color="inherit" component="a" href="https://www.instagram.com/dyl4n.4c/" target="_blank" rel="noopener noreferrer">
